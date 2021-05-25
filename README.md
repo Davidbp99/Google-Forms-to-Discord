@@ -1,4 +1,4 @@
-![THIS](https://pillow.s-ul.eu/6ev89Z6J)
+![THIS](https://i.gyazo.com/9b06ac617447599312f9d7458dcfee53.png)
 
 # Basic Setup
 
@@ -9,10 +9,12 @@
 
 ![script editor](https://pillow.s-ul.eu/iLfUuy9l.png)
 
-4) Paste the contents of `google script.js`.
-
+4) Paste the contents of `google script.js` and update the code as you want via the config. Make sure you update the replytofind based on how you made the form
+```javascript 
+var replytofind = 0 // The items start at 0 and not 1 (keep that in mind)
+```
 5) Open Discord and make a channel where you'd like the responses to be sent.
-6) Create a webhook and copy the URL. Replace `WEBHOOKURL` at the top of the script with the URL you copied.
+6) Create a webhook and copy the URL. Replace `BACKUPWEBHOOKURL` at the top of the script with the URL you copied. This is just for backup if some problems would happen.
 
 ![Create a new Webhook.](https://pillow.s-ul.eu/9G6CaZ7P)
 ![Copy Webhook URL.](https://pillow.s-ul.eu/fcfrn7vt)
