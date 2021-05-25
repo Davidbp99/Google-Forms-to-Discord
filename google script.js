@@ -1,8 +1,9 @@
 // Config area
-var Backupurl = ""; // For backup
+var Backupurl = "BACKUPWEBHOOKURL"; // For backup
 var Logo = "";// URL to the logo you want
 var bottittle = "";
 var colornice = "15745792";
+var replytofind = 0 // The items start at 0 and not 1 (keep that in mind)
 // End of Config area
 
 //System Stuff
@@ -22,7 +23,7 @@ var botname = "Edit This For Your Bot Name";
 //
 
       // We first need to find the discord hook the user will use
-  var answer = response[0].getResponse() // The items start at 0 and not 1 (keep that in mind)
+  var answer = response[replytofind].getResponse() 
   // To get the actual text of the first questions answer, we need to filter the unnecessary characters out using regex.
   try {
     var parts = answer.match(/[\s\S]{1,1024}/g) || [];
