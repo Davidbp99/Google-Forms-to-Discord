@@ -25,11 +25,31 @@ var replytofind = 0 // The items start at 0 and not 1 (keep that in mind)
 
 8) Submit a test response to make sure it works.
 
+# How My Form Looked Like
+![THIS](https://i.gyazo.com/7e02ae5af4447a4c75932a1267181d64.png)
+Just To give everyone an idea how it is made.
 
 # Additional Options
 
 In this section, we will outline the multiple different cosmetic customizations that you can add to your webhook. You can use any combination of the options displayed below.
 
+
+#### Config
+Instead of going around in the script or that you need to do custom edits I have made it easy from a config section that you can edit then start using
+```javascript
+// Config area
+var Backupurl = "BACKUPWEBHOOKURL"; // For backup
+var Logo = "";// URL to the logo you want
+var bottittle = "";
+var colornice = "15745792";
+var replytofind = 0 // The items start at 0 and not 1 (keep that in mind)
+// End of Config area
+
+//inside the function
+  // To change the bot name (it did not want to be in the config area)
+var botname = "Edit This For Your Bot Name";
+//
+```
 #### Colour
 This option will allow you to set a colour to your embed. The colour option requires a numerical input instead of hexadecimal.
 E.g. Red in Hexadecimal is #FF0000. As a decimal, this would be translated into 16711680.
@@ -38,7 +58,7 @@ E.g. Red in Hexadecimal is #FF0000. As a decimal, this would be translated into 
   "embeds" :[{
     "title": "TOP TEXT CHANGE THIS IN SCRIPT",
     "fields" : items,
-    "color": 16711680
+    "color": colornice
   }]
 }
 ```
