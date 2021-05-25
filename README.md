@@ -27,7 +27,7 @@ var replytofind = 0 // The items start at 0 and not 1 (keep that in mind)
 
 # How My Form Looked Like
 ![THIS](https://i.gyazo.com/7e02ae5af4447a4c75932a1267181d64.png)
-Just To give everyone an idea how it is made.
+Just to give everyone an idea how it is made.
 
 # Additional Options
 
